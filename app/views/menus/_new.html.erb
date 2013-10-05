@@ -1,0 +1,14 @@
+<h1>New menu</h1>
+<%= form_for(@menu, remote: true) do |f| %>
+  <div class="field">
+  	<%= f.hidden_field :restaurant_id, :value => @restaurant.id%>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <%= @restaurant.inspect %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', menus_path %>

@@ -3,4 +3,9 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @restaurant %> |
-<%= link_to 'Back', restaurants_path %>
+<%= link_to 'Back', restaurants_path %> |
+<p>
+<%= @restaurant.menus.count %>
+</p>
+
+<%= render 'menus/new' %>
