@@ -1,6 +1,6 @@
 Lunch::Application.routes.draw do
+  resources :menus
   resources :restaurants
-
   root to: "restaurants#index"
 
 
